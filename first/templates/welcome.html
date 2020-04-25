@@ -1,0 +1,246 @@
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Enlighten-Vidhya Sarvtra Pujyate</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/assets/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+        <!-- ======= Header ======= -->
+        <header id="header">
+          <div class="container-fluid">
+      
+            <div class="logo float-left">
+              <h1 class="text-light"><a href="/first/welcome/"></a><img src="/static/img/LOGO.jpg" height="300px" width="100px" class="img-fluid"></a></h1>
+              <!-- Uncomment below if you prefer to use an image logo -->
+              <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+      
+            <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+            <nav class="nav-menu">
+              <ul>
+                <li class="active"><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="/first/logout">Logout</a></li>
+              </ul>
+            </nav><!-- .nav-menu -->
+      
+          </div>
+        </header><!-- End #header -->
+      
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+          <div class="hero-container">
+            <h1>Welcome to Enlighten</h1><br>
+            <h2>Time Remaining For Your Online Examination</h2>
+
+          <div id="demo"/>
+          <script> 
+              var deadline = new Date("April 24, 2020 23:50:00").getTime(); 
+              var x = setInterval(function() { 
+              var now = new Date().getTime(); 
+              var t = deadline - now; 
+              var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+              var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+              var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+              var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+              document.getElementById("demo").innerHTML = "Hours: " 
+              + hours + "<br> Minutes: " + minutes + "<br> Seconds: " + seconds ; 
+                if (t < 0) { 
+              clearInterval(x); 
+                  window.location = "http://127.0.0.1:8000/first/examreq"
+            } 
+          }, 1000); 
+      </script>
+          </div>
+        </section><!-- #hero -->
+      
+        <main id="main">
+      
+          <!-- ======= About Section ======= -->
+          <section id="about" class="about">
+            <div class="container">
+      
+              <div class="row">
+                <div class="col-lg-6">
+                  <img src="/static/assets/img/about-img.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0"><br><br>
+                 <b> <h3>Enlighten Team</h3> </b> 
+                  <p class="font-italic">
+                    <b>"Vidhya Sarvtra Pujyate"</b>
+                    </p>
+                  <ul>
+                    <li><i class="bx bx-check-double"></i> We made conducting exams easier  </li>
+                    <li><i class="bx bx-check-double"></i> Our team is made up of undergraduate students.</li>
+                    <li><i class="bx bx-check-double"></i> We all have done work with many universities for making examination process easy and user friendly. </li>
+                  </ul>
+                  <p>
+                    As our tagline says: <u><b>"Vidhya sarvtra pujyate"</b></u>, we believe that examination is the part of our life and after attempting every examination we definitely get knowledge, experience which make us more wiser.
+      
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+          </section><!-- End About Section -->
+      
+          <!-- ======= Why Us Section ======= -->
+          <section id="why-us" class="why-us section-bg">
+            <div class="container">
+      
+              <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                  <div class="card">
+                    <img src="/static/assets/img/why-us-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-icon">
+                      <i class="bx bx-book-reader"></i>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="">Our Mission</a></h5>
+                      <p class="card-text">To make examination more secure we are going to include best practices and latest technologies for managing your online examination process. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                  <div class="card">
+                    <img src="/static/assets/img/why-us-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-icon">
+                      <i class="bx bx-calendar-edit"></i>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="">Our Plan</a></h5>
+                      <p class="card-text">Oue plan is to increase availability of onine resources for students.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                  <div class="card">
+                    <img src="/static/assets/img/why-us-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-icon">
+                      <i class="bx bx-landscape"></i>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="">Our Vision</a></h5>
+                      <p class="card-text"> To make examinations more user friendy as it can be used anywhere and anytime.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </section><!-- End Why Us Section -->
+      
+          <!-- ======= Frequenty Asked Questions Section ======= -->
+         
+          <!-- ======= Contact Us Section ======= -->
+          <section id="contact" class="contact section-bg">
+            <div class="container">
+      
+              <div class="section-title">
+                <h2>Contact Us</h2>
+              </div>
+      
+              <div class="row justify-content-center">
+      
+                <div class="col-lg-3 col-md-5 mb-5 mb-md-0">
+                  <div class="info">
+                    <div class="address">
+                      <i class="bx bx-map"></i>
+                      <p>Dharmsinh Desai University<br>College Road, Nadiad-387001</p>
+                    </div>
+      
+                    <div class="email">
+                      <i class="bx bx-envelope"></i>
+                      <p>enlighten321@gmail.com</p>
+                    </div>
+      
+                    <div class="phone">
+                      <i class="bx bx-phone-call"></i>
+                      <p>+917016078024</p>
+                    </div>
+                  </div>
+      
+                  <div class="social-links">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+      
+                </div>
+      
+                <div class="col-lg-5 col-md-7">
+                  <form action="/first/contactus/" method="POST" class="box">{% csrf_token %}
+                    <div class="form-group">
+                      <input type="text" name="AppId" class="form-control" id="AppIds" placeholder="Your Application Id" data-rule="minlen:12" data-msg="Please enter at least 12 chars" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter subject" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <div class="validate"></div>
+                    </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+                  </form>
+                </div>
+      
+              </div>
+      
+            </div>
+          </section><!-- End Contact Us Section -->
+      
+        </main><!-- End #main -->
+      
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+          <div class="container">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Enlighten</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              Designed by <a href="#">EnlightenTeam</a>
+            </div>
+          </div>
+        </footer><!-- End #footer -->
+      
+        <!-- Vendor JS Files -->
+        <script src="/static/assets/vendor/jquery/jquery.min.js"></script>
+        <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+      
+        <!-- Template Main JS File -->
+        <script src="/static/assets/js/main.js"></script>
+      
+      </body>
+      
+
+</html>

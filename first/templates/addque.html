@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+	<link href="/static/css/main.css" rel="stylesheet" media="all">
+	<title>Add New Record</title>
+</head>
+<body>
+<br><br><br>
+<div class="p-l-100">
+<form action="/first/enterque/" method="POST" class="box">{% csrf_token %}
+	<div class="p-l-100 p-r-100">
+		<div class="page-wrapper p-b-50">
+			<div class="wrapper wrapper--w500">
+				<div class="card card-5">
+					<div class="card-heading">
+						<h2 class="title">Add New Record</h2>
+					</div>
+					<div class="card-body">
+						<form method="POST">
+							 <div class="form-row">
+								<div class="name1">Question Id</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="QuestionId" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">Question</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="Question" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">Option1</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="Option1" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">Option2</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="Option2" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">Option3</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="Option3"required="true" >
+									</div>
+								</div>
+						  </div>
+						  <div class="form-row">
+							<div class="name1">Option4</div>
+							<div class="value">
+								<div class="input-group">
+									<input class="input--style-5" type="text" name="Option4"required="true" >
+								</div>
+							</div>
+					  </div>
+					  <div class="form-row">
+						<div class="name1">Answer</div>
+						<div class="value">
+							<div class="input-group">
+								<input class="input--style-5" type="text" name="Answer"required="true" >
+							</div>
+						</div>
+				  </div>
+							<div class="form-row m-b-55">
+								<button class="btn btn--radius-2 btn--red" type="submit">Submit</button>
+										</div>
+									</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Update Record</title>  
+    
+<link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+<link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+<!-- Font special for pages-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+<!-- Vendor CSS-->
+<link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+<link href="/static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+<!-- Main CSS-->
+<link href="/static/css/main.css" rel="stylesheet" media="all"> 
+</head>  
+<body>  
+  
+<br><br><br>
+<div class="p-l-100">
+<form method="POST" class="post-form" action="/first/update/{{question.QuestionId}}">  
+        {% csrf_token %}  
+        <div class="p-l-100 p-r-100">
+          <div class="page-wrapper p-b-50">
+            <div class="wrapper wrapper--w500">
+              <div class="card card-5">
+                <div class="card-heading">
+                  <h2 class="title">Update Record</h2>
+                </div>
+                <div class="card-body">
+                  <form method="POST">
+                     <div class="form-row">
+                      <div class="name1">Question Id</div>
+                      <div class="value">
+                        <div class="input-group">
+                          <input class="input--style-5" type="text" name="queid" required="true" value="{{ question.QuestionId}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="name1">Question</div>
+                      <div class="value">
+                        <div class="input-group">
+                          <input class="input--style-5" type="text" name="que" required="true" value="{{ question.Question}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="name1">Option1</div>
+                      <div class="value">
+                        <div class="input-group">
+                          <input class="input--style-5" type="text" name="op1" required="true" value="{{ question.Option1}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="name1">Option2</div>
+                      <div class="value">
+                        <div class="input-group">
+                          <input class="input--style-5" type="text" name="op2" required="true" value="{{ question.Option2}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="name1">Option3</div>
+                      <div class="value">
+                        <div class="input-group">
+                          <input class="input--style-5" type="text" name="op3" required="true" value="{{ question.Option3}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="name1">Option4</div>
+                    <div class="value">
+                      <div class="input-group">
+                        <input class="input--style-5" type="text" name="op4" required="true" value="{{ question.Option4}}">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                  <div class="name1">Answer</div>
+                  <div class="value">
+                    <div class="input-group">
+                      <input class="input--style-5" type="text" name="ans" required="true" value="{{ question.Answer}}">
+                    </div>
+                  </div>
+                </div>
+                    <div class="form-row m-b-55">
+                      <button class="btn btn--radius-2 btn--red" type="submit">Update</button>
+                          </div>
+                        </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</form> 
+</div> 
+</body>  
+</html>  

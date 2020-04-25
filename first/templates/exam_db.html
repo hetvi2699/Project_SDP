@@ -1,0 +1,29 @@
+
+<html>
+	<head>
+        <title>Questions</title>
+        
+    </head>
+    <body>
+        <h1>Exams:</h1>
+
+                   
+            
+        
+            
+        
+        {%if context%}
+            
+            {% for args in context%}
+                <!-- Questions--> {{args.Q_id}}.{{args.Question}} <br>
+            
+            <input type="radio" name="Option" value="option1">{{args.Option1}}<br></input>
+            <input type="radio"  name="Option" value="option2"> {{args.Option2}}<br></input>
+            <input type="radio" name="Option" value="option3"> {{args.Option3}}<br></input>
+            <input type="radio"  name="Option"  value="option4"> {{args.Option4}}<br></input>
+            {%endfor%}
+        
+        {%endif%}
+       
+    </body>
+</html>

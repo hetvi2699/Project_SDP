@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Certificate</title>
+{% block content %}
+<style>
+.signature, .title { 
+float:left;
+  border-top: 1px solid #000;
+  width: 200px; 
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+
+#score, #scoretr, #scoretd {
+  border: 2px solid black;
+  width: 60%;
+  height: 30px;
+  
+}
+#scoretd, #scoretr{
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<center>
+  <form method="POST" class="post-form" action="/first/download_pdf/">  
+    {% csrf_token %} 
+<div style="width:800px; height:680px; padding:15px; text-align:center; border: 15px solid #787899">
+<div style="width:750px; height:630px; padding:15px; text-align:center; border: 10px solid #787833">
+
+       <div align="left"><image src="/static/img/LOGO.jpg" height="100px" width="100px"/></div>
+       <h1 style="position:absolute;left:60%;top:55px;font-size:40px;color:brown;" ><i><b>Enlighten</b></i></h1>
+       <h1 style="position:absolute;left:58%;top:110px;font-size:20px;color:brown;" ><i>Online Examination System</i></h1>
+       
+       <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+       <br><br>
+       <span style="font-size:25px">This certificate is awarded to</span>
+       <br>
+       <span style="font-size:30px"><b><u>{{student.Name}}</u></b></span><br/>
+       <span style="font-size:25px">for successfully clearing <br><b>Online Examination For Apptitude</b></span> <br/>
+       <span style="font-size:25px">conducted on 24 April, 2020.</span> <br/>
+       <center>
+			<table id="score" style="margin-top:40px;float:center;">
+			<tr id="scoretr">
+			<td id="scoretd"><span style="font-size:20px"><b><center>Application Id</center></b></td>
+			<td id="scoretd"><span style="font-size:20px"><b><center> Marks </center></b></td>
+			<td id="scoretd"><span style="font-size:20px"><b><center>  Rank   </center></b></td>
+			</tr>
+			<tr id="scoretr">
+      <td id="scoretd"><span style="font-size:20px"><b><center>{{student.AppId}}</center></b></td>
+      
+			<td id="scoretd"><span style="font-size:20px"><b><center>{{result.Result}} / 10</center></b></td>
+			<td id="scoretd"><span style="font-size:20px"><b><center>{{result.Rank}}</center></b></td>
+			</tr>
+      </table>
+      </center> 
+    <center>
+    <table style="margin-top:40px;float:center">
+    <tr>
+    <td><span style="font-size:22px"><b><center><image src="/static/sign.jpg" height="70px" width="70px"/></center></b></td>
+    </tr>
+    <tr>
+    <td style="width:250px;float:center;border:0;border-bottom:1px solid #000;"></td>
+    </tr>
+    <tr>
+    <td style="text-align:center"><span style="font-size:20px"><b>Dr. Hetvi Mehta</b></td>
+    </tr><tr>
+    <td style="text-align:center"><span style="font-size:20px"><b>Director of the Enlighten </b></td>
+    </tr>
+    </table>
+  </center>
+</div>
+</div><br><br>
+<!--<tr>
+  <td>
+    <button type="submit" class="btn btn-success">Perfect</button> 
+  </td>
+</tr>-->
+</center>
+{% endblock %}
+</form>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Enlighten- Vidhya Sarvtra Pujayate</title>
+
+    <!-- Icons font CSS-->
+    <link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="/static/css/main.css" rel="stylesheet" media="all">
+	<style>
+	hed {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 50px;
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 4px 4px white;
+	color: gray;
+	}
+body {
+  font-size: 23px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+img {
+  border-radius: 50%;
+}
+
+</style>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+</head>
+
+<body>
+<div class="p-t-20 p-b-10" >
+<hed>
+	Enlighten Examination April(2020)
+	<br>
+</hed>
+</div>
+<ul>
+  <li><img src="/static/img/LOGO.jpg" alt="LOGO" align="right-side" height="55px" width="55px"/></li>
+
+  <li><a href="#news">Home</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+
+<!--END OF HEADER-->
+  <br><br><br>
+  <div class="p-l-100">
+	<form action="/first/frgtpwd/" method="POST" class="box">{% csrf_token %}
+	<div class="p-l-100 p-r-100">
+		<div class="page-wrapper p-b-50">
+			<div class="wrapper wrapper--w500">
+				<div class="card card-5">
+					<div class="card-heading">
+						<h2 class="title">Reset Your Password</h2>
+					</div>
+					<div class="card-body">
+						<form method="POST">
+							 <div class="form-row">
+								<div class="name1">Application Id</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="AppId" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">Security Question</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="sque" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">Security Answer</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="sans" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">New Password</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="password" name="password" id="txtPassword" required="true">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="name1">Confirm New Password</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="password"  name="password1" id="txtConfirmPassword" required="true" >
+									</div>
+								</div>
+						  </div>
+							<div class="form-row m-b-55">
+								<button class="btn btn--radius-2 btn--red" type="submit" onclick="Validate()">Submit</button>
+										</div>
+									</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>
+	<footer><div class="col-lg-4 col-md-6 mb-5 mb-lg-0 a3" ><br><br>
+	  <h3 ><u>Contact Us</u></h3><br>
+	  
+	  <ull>
+		  <lii><a href="#">Get in touch</a></lii><br>
+		  <lii><a href="#">Ask-us</a></lii><br>
+		  <lii><a href="#">enlighten321@gmail.com</a></lii><br>
+		  <lii><a href="#">7016020200</a></lii><br>
+			</ull>
+	  <br>
+	</div><div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+	  <h3></h3><ul >
+		  </ul>
+	  
+	</div>
+	<br> 
+	  <a href="#" class="fa fa-facebook"></a>
+	  <a href="#" class="fa fa-twitter"></a>
+	  <a href="#" class="fa fa-google"></a>
+	  <a href="#" class="fa fa-linkedin"></a>
+	  <a href="#" class="fa fa-instagram"></a>
+	  <a href="#" class="fa fa-pinterest"></a>
+	  <a href="#" class="fa fa-snapchat-ghost"></a>
+	  <br><br>
+  <div class="container">
+	<div class="copyright">
+	  &copy; Copyright <strong><span>Enlighten</span></strong>. All Rights Reserved
+	</div>
+	<div class="credits a2">
+	  Designed by <a href="#">EnlightenTeam</a>
+	</div>
+  </div>
+	  </footer>
+	  
+	  <script src="/static/vendor/jquery/jquery.min.js"></script>
+	  <script src="/static/vendor/select2/select2.min.js"></script>
+	  <script src="/static/vendor/datepicker/moment.min.js"></script>
+	  <script src="/static/vendor/datepicker/daterangepicker.js"></script>
+	  <script src="/static/js/global.js"></script>
+	
+	</body>
+	
+	</html>
+	
